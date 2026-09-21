@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PREVENCION DEL CONSUMO DEL VAPER</title>
+  <!--bootstrap-->
+  <link href="css/bootsrapV5.3.2.css" rel="stylesheet">
+
+  <!--font awesome-->
+  <link href="css/all.min.css" rel="stylesheet">
+  <!--estilos generales-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/main.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+  <div id="loginScreen" class="login-screen">
+
+  <div class="login-box">
+
+    <h1 class="text-title text-center mb-4">
+      Bienvenido
+    </h1>
+    <p></p>
+    <img src="img/ca0790ab-7274-43f7-8aec-8dc5ab11c0ba.png" width="200px" height="200px">
+
+    <form id="formLogin">
+
+      <input
+        type="text"
+        id="inputNombre"
+        class="form-control mb-3"
+        placeholder="Ingrese su nombre">
+
+      <button type="submit" class="btn-temas w-100">
+        Ingresar
+      </button>
+
+    </form>
+    <div id="alertContainer"></div>
+
+  </div>
+
+</div>
+
+<div id="appContent" style="display:none;">
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/ca0790ab-7274-43f7-8aec-8dc5ab11c0ba-removebg-preview.png" alt="" class="img-logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargarPagina('inicio.html')">Inicio</a>
+            </li>
+
+
+              <div class="btn-group">
+              <button type="button" class="btn ">Contexto</button>
+              <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+            
+                <li><a class="dropdown-item" href="javascript:cargarPagina('planteamiento del problema.html')">Planteamiento del problema</a></li>
+                <li><a class="dropdown-item" href="javascript:cargarPagina('objetivos.html')">Objetivos</a>
+                  <li><a class="dropdown-item" href="javascript:cargarPagina('marco de referencia.html')">Marco de referencia</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item">Objetivo General</li>
+                    <li class="dropdown-item">Objetivo Especificos</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- Example split danger button -->
+            <div class="btn-group">
+              <button type="button" class="btn ">Acerca de</button>
+              <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="javascript:cargarPagina('introduccion.html')">Introducción</a></li>
+                <li><a class="dropdown-item" href="javascript:cargarPagina('evidencias.html')">Evidencias</a></li>
+                <li><a class="dropdown-item" href="javascript:cargarPagina('conclusiones.html')">Conclusiones</a>
+                 <li><a class="dropdown-item" href="javascript:cargarPagina('justificación.html')">Justificación</a>  
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item">Objetivo General</li>
+                    <li class="dropdown-item">Objetivo Especificos</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargarPagina('Actividades.html')">Actividades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargarPagina('juego.html')">Juego</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargarPagina('conclusion.html')">Conclusión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargarPagina('creditos.html')">Créditos</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+<div class="mt-4 text-center">
+    <h5 id="nombre"></h5>
+</div>
+
+  </header>
+  
+  <section id="contenido">
+    
+
+  </section>
+  <footer class="footer">
+     GIMNASIO SANTANDER - derechos reservados - Dana lopez 
+
+  </footer>
+
+</div>
+
+
+  
+</body>
+
+</html>

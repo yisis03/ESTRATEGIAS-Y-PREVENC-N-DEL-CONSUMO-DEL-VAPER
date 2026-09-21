@@ -1,0 +1,266 @@
+:root{
+    --background-navbar: #9e4797;
+    --background-footer: #d88d9a;
+    --color-footer:white;
+    --color-title1:#698194;
+    --color-problem1:#9355e4;
+}
+.navbar{
+    background-color: var(--background-navbar) !important;
+    background-color: var(--background-navbar);
+
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+    color: var(--color-footer);
+    font-weight: bold;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-footer);
+    color:antiquewhite;
+    padding: 6px 20px;
+}
+.tittle{
+    color: var(--color-tittle1);
+    font-size: 45px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.tittle1:hover{
+    font-size: 40px;
+    color: darkorchid;
+    font-weight: bold;
+}
+.parrafo-1{
+    margin:10px;
+    font-size: 25px;
+}
+.background-modal-header{
+    background-color: var(--background-footer);
+    color:var(--color-texto);
+}
+.btn-close{
+    color: var(--background-btn-explorar);
+    background-color: var(--background-btn-explorar);
+}
+.problem1{
+    color: var(--color-problem1);
+    font-size: 45px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.parrafo1{
+    font-family: 'Gill sans', 'Gill sans MT', 'trebuchet MS', sans-serif;
+    color:#d88d9a;
+    padding: 20px;
+    text-align: justify;
+}
+.img-logo{
+    width: 40ox;
+    height: 40px;
+}
+iframe{
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+.img-logo{
+    width: 70px;
+    height: 70px;
+}
+.espacio{
+    height: 200px;
+}
+
+/* Ajustar tamaño del carrusel */
+#miCarrusel{
+    max-width: 700px; /* ancho del carrusel */
+    margin: auto; /* centrar */
+     --background-navbar: #9e4797;
+}
+
+/* Ajustar imágenes */
+#miCarrusel .carousel-item img{
+    height: 300px; /* altura más pequeña */
+    object-fit: contain; /* muestra la imagen completa */
+}
+
+/* Cambiar color del título */
+.carousel-caption h3{
+    color: #380133; /* color del título */
+    font-weight: bold;
+}
+
+/* Cambiar color del párrafo */
+.carousel-caption p{
+    color: #000000; /* color del texto */
+    font-size: 18px;
+}
+
+;
+.credit-card{
+    border: none;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+
+.credit-img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* imagen redonda */
+    margin: 20px auto 10px;
+    display: block;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+.card-text{
+    color: #666;
+}
+
+
+.actividad{
+    max-width:800px;
+    margin:auto;
+    margin-top:40px;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.tablero{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+}
+
+.carta{
+    height:170px;
+    background:#cf3080;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    overflow:hidden;
+    transition:.3s;
+}
+.login-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #cd71f1, #82abaf);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.login-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+body{
+    background: #f5f7fa;
+}
+
+/* Cartas */
+.credit-card{
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: all .4s ease;
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* Efecto superior */
+.credit-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg,#940174,#ea00ff);
+    transform: scaleX(0);
+    transition: .4s;
+}
+
+.credit-card:hover::before{
+    transform: scaleX(1);
+}
+
+/* Hover tarjeta */
+.credit-card:hover{
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 20px 40px hwb(277 52% 2% / 0.918);
+}
+
+/* Imagen circular */
+.profile-img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #9D00FF;
+    transition: all .5s ease;
+}
+
+/* Animación imagen */
+.credit-card:hover .profile-img{
+    transform: rotate(8deg) scale(1.1);
+    border-color: #cf7ccb;
+}
+
+/* Nombre */
+.credit-card h4{
+    color: #333;
+    font-weight: 700;
+    transition: .4s;
+}
+
+.credit-card:hover h4{
+    color: #9D00FF;
+}
+
+/* Entrada animada */
+.credit-card{
+    animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+.btn-temas{
+    background-color: #a10ca1;
+    color: #000000;
+}
+

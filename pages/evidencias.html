@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galería de Evidencias</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrapV5.3.2.css">
+
+    <style>
+
+        body {
+            background-color: #f8f0ff;
+        }
+
+        /* TÍTULO */
+        .titulo {
+            color: #7b2cbf;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .subtitulo {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* CASILLAS PRINCIPALES */
+        .grupo {
+            background-color: white;
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            transition: 0.3s;
+            height: 100%;
+        }
+
+        .grupo:hover {
+            transform: translateY(-8px);
+        }
+
+        .grupo img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .grupo-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .grupo h4 {
+            color: #7b2cbf;
+            font-weight: bold;
+        }
+
+        .grupo p {
+            color: #666;
+        }
+
+        .btn-evidencias {
+            background-color: #9d4edd;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+        }
+
+        .btn-evidencias:hover {
+            background-color: #7b2cbf;
+            color: white;
+        }
+
+        /* MODAL */
+        .modal-header {
+            background-color: #7b2cbf;
+            color: white;
+        }
+
+        /* EVIDENCIAS DENTRO DEL MODAL */
+        .evidencia-modal {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+            background: white;
+        }
+
+        .evidencia-modal img {
+            width: 50%;
+            height: 180px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .evidencia-modal p {
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+            color: #7b2cbf;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container py-5">
+
+        <!-- TÍTULO -->
+        <h1 class="titulo">
+            Galería de Evidencias
+        </h1>
+
+        <p class="subtitulo">
+            Proyecto de estrategias y prevención del uso y consumo del vaper
+        </p>
+
+
+        <!-- ================================================= -->
+        <!-- 4 CASILLAS PRINCIPALES -->
+        <!-- ================================================= -->
+
+        <div class="row g-4">
+
+
+            <!-- ==================== -->
+            <!-- GRUPO 1 -->
+            <!-- ==================== -->
+
+            <div class="col-12 col-md-6">
+
+                <div class="grupo">
+
+                    <img src="img/img_20.png"
+                         alt="Actividades del proyecto">
+
+                    <div class="grupo-body">
+
+                        <h4>Actividad del proyecto</h4>
+
+                        <p>
+                            En esta primera sesión se puede notar 
+                            que la institución  Semillero, familia, 
+                            cultura y territorio para empezar con esta serie 
+                            de actividades que se puede contemplar.
+                    
+                        </p>
+
+                        <button class="btn btn-evidencias"
+                                data-bs-toggle="modal"
+                                data-bs-target="#grupo1">
+                                
+                            Ver 4 evidencias
+                            
+                        </button>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================== -->
+            <!-- GRUPO 2 -->
+            <!-- ==================== -->
+
+            <div class="col-12 col-md-6">
+
+                <div class="grupo">
+
+                    <img src="img/img_28.png"
+                         alt="Desarrollo">
+
+                    <div class="grupo-body">
+
+                        <h4>actividad del proyecto</h4>
+
+                        <p>
+                            En esta segunda sesión se indentifica
+                            esos mitos y realidades sobre el vaper
+                            teniendo en cuenta lo que los chicos entendieron
+                            y tuvieron presente.
+    
+                            
+        
+                        </p>
+
+                        <button class="btn btn-evidencias"
+                                data-bs-toggle="modal"
+                                data-bs-target="#grupo2">
+
+                            Ver 4 evidencias
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================== -->
+            <!-- GRUPO 3 -->
+            <!-- ==================== -->
+
+            <div class="col-12 col-md-6">
+
+                <div class="grupo">
+
+                    <img src="img/evidencia9.jpg"
+                         alt="Participación">
+
+                    <div class="grupo-body">
+
+                        <h4>Participación de estudiantes</h4>
+
+                        <p>
+                            Participación de los estudiantes de
+                            grado noveno.
+                        </p>
+
+                        <button class="btn btn-evidencias"
+                                data-bs-toggle="modal"
+                                data-bs-target="#grupo3">
+
+                            Ver 4 evidencias
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================== -->
+            <!-- GRUPO 4 -->
+            <!-- ==================== -->
+
+            <div class="col-12 col-md-6">
+
+                <div class="grupo">
+
+                    <img src="img/evidencia13.jpg"
+                         alt="Resultados">
+
+                    <div class="grupo-body">
+
+                        <h4>Resultados del proyecto</h4>
+
+                        <p>
+                            Evidencias de los resultados obtenidos
+                            con el proyecto.
+                        </p>
+
+                        <button class="btn btn-evidencias"
+                                data-bs-toggle="modal"
+                                data-bs-target="#grupo4">
+
+                            Ver 4 evidencias
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- MODAL GRUPO 1 - 4 EVIDENCIAS -->
+    <!-- ================================================= -->
+
+    <div class="modal fade" id="grupo1" tabindex="-1">
+
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        Actividad del proyecto
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row g-3">
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/img_16.jpeg"
+                                     alt="Evidencia 1">
+                                <p>Evidencia 1</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/img_15.jpeg"
+                                     alt="Evidencia 2">
+                                <p>Evidencia 2</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/img_17.jpeg"
+                                     alt="Evidencia 3">
+                                <p>Evidencia 3</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/img_18.jpeg"
+                                     alt="Evidencia 4">
+                                <p>Evidencia 4</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- MODAL GRUPO 2 -->
+    <!-- ================================================= -->
+
+    <div class="modal fade" id="grupo2" tabindex="-1">
+
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Actividad del proyecto
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal">
+                    </button>
+                </div>
+
+
+                    <div class="row g-3">
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/img_24.jpeg">
+                                <p>Evidencia 5</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/img_25.jpeg">
+                                <p>Evidencia 6</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/img_26.jpeg">
+                                <p>Evidencia 7</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/img_27.jpeg">
+                                <p>Evidencia 8</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- MODAL GRUPO 3 -->
+    <!-- ================================================= -->
+
+    <div class="modal fade" id="grupo3" tabindex="-1">
+
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Participación de los estudiantes
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row g-3">
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/evidencia9.jpg">
+                                <p>Evidencia 9</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/evidencia10.jpg">
+                                <p>Evidencia 10</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/evidencia11.jpg">
+                                <p>Evidencia 11</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/evidencia12.jpg">
+                                <p>Evidencia 12</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- MODAL GRUPO 4 -->
+    <!-- ================================================= -->
+
+    <div class="modal fade" id="grupo4" tabindex="-1">
+
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Resultados del proyecto
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row g-3">
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/evidencia13.jpg">
+                                <p>Evidencia 13</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/evidencia14.jpg">
+                                <p>Evidencia 14</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/evidencia15.jpg">
+                                <p>Evidencia 15</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="evidencia-modal">
+                                <img src="img/evidencia16.jpg">
+                                <p>Evidencia 16</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
